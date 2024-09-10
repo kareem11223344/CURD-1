@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+#CRUDS {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#CRUDS header {
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#CRUDS input {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+#CRUDS input:focus {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+#CRUDS #price input {
+    width: 20%;
+}
+
+#CRUDS #inputs #price span {
+    background-color: green;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+#CRUDS #inputs #price span::before {
+    content: 'Total: ';
+}
+
+#CRUDS button {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 0;
+    margin: 5px 0;
+    cursor: pointer;
+    border: 1px solid#333;
+    transition: all 0.5s;
+}
+
+#CRUDS button:hover {
+    background-color: #333;
+}
+
+#CRUDS .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+#CRUDS .btn button {
+    width: 45%;
+}
+
+#CRUDS #output {
+    margin: 20px 0;
+}
+
+#CRUDS #output table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#CRUDS #output table thead {
+    text-transform: uppercase;
+}
+
+#CRUDS #output table tbody button {
+    width: 70%;
+}
+
+#noItem {
+    margin: 40px;
+    text-align: center;
+}
+
+#noItem {
+    color: rgb(173, 117, 228);
+    font-weight: bolder;
+}

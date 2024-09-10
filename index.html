@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="CRUDS">
+        <header>
+            <h2>cruds</h2>
+            <p>product management system</p>
+        </header>
+
+
+       <form>
+        <div id="inputs">
+            <input type="text" id="titleInput" placeholder="Title" required>
+            <div id="price">
+                <input onkeyup="getTotal()" type="number" id="priceInput" placeholder="Price" required>
+                <input onkeyup="getTotal()" type="number" id="taxesInput" placeholder="Taxes">
+                <input onkeyup="getTotal()" type="number" id="adsInput" placeholder="Ads">
+                <input onkeyup="getTotal()" type="number" id="discountInput" placeholder="Discount">
+                <span id="total"></span>
+            </div>
+            <input type="number" id="countInput" placeholder="Count">
+            <input type="text" id="categoryInput" placeholder="Category" required>
+            <button type="submit" id="create">Create</button>
+
+            <input onkeyup="readData(this.value)" type="text" id="search" placeholder="Search">
+            <div class="btn">
+                <button onclick="getSearshMode(this.id)" type="button" id="searchByTitle">Search By Title</button>
+                <button onclick="getSearshMode(this.id)" type="button" id="searchByCategory">Search By Category</button>
+            </div>
+        </div>
+       </form>
+
+
+        <div id="output">
+            <div id="deleteAll"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="data"></tbody>  
+            </table>
+            <div id="noItem"> ---- There are no items here ---- </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
